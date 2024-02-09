@@ -4,12 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UntoldCoding</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="new.css" />
   </head>
   <body>
-    <div class="discontinued"></div>
-    <div class="main">
-      <p>I have Something <a href="new.html">Click Here</a></p>
-    </div>
+    <button class="chocolate-button">
+      <div class="crumbs"></div>
+      <span class="bar">
+        <span class="text"> Chocolate Bar</span>
+      </span>
+    </button>
+
+    <div class="instructions">Click on Chocolate</div>
+
+    <script>
+      console.clear();
+
+      const elButton = document.querySelector(".chocolate-button");
+
+      elButton.addEventListener("mousedown", (event) => {
+        if (!elButton.matches(":focus")) {
+          elButton.style.setProperty("--x", event.offsetX);
+          elButton.style.setProperty("--y", event.offsetY);
+        }
+      });
+    </script>
   </body>
 </html>
