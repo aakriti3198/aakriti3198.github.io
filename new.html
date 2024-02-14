@@ -4,29 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UntoldCoding</title>
-    <link rel="stylesheet" href="new.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <button class="chocolate-button">
-      <div class="crumbs"></div>
-      <span class="bar">
-        <span class="text"> Chocolate Bar</span>
-      </span>
-    </button>
+    <section id="home" class="home">
+      <div class="home_section"></div>
+      <div id="container">
+        <div class="left"></div>
+        <div class="right"></div>
+        <a href="new.html"
+          ><p>
+            Happy Valentine's Day <br />
 
-    <div class="instructions">Click on Chocolate</div>
-
-    <script>
-      console.clear();
-
-      const elButton = document.querySelector(".chocolate-button");
-
-      elButton.addEventListener("mousedown", (event) => {
-        if (!elButton.matches(":focus")) {
-          elButton.style.setProperty("--x", event.offsetX);
-          elButton.style.setProperty("--y", event.offsetY);
-        }
-      });
-    </script>
+            <span>Click Here</span>
+          </p></a
+        >
+      </div>
+      <h1><span>I&nbsp;</span><span>You</span></h1>
+      <h2>
+        I have Something for you💖 <br />
+        Please Hover on Above Text And click on Valentine's Heart
+      </h2>
+    </section>
   </body>
 </html>
